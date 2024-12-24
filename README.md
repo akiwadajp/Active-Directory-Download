@@ -12,7 +12,7 @@ Right-click the Start button and select "Windows PowerShell" then select Run as 
 <br />
 <br />
 <br />
-Listing RSAT Capabilities: <br/>
+List RSAT Capabilities: <br/>
 Get-WindowsCapability -Name RSAT* -Online | Select-Object -Property Name, State
 <br />
 This command lists all RSAT capabilities available on your system and their current state
@@ -22,10 +22,11 @@ This command lists all RSAT capabilities available on your system and their curr
 
 
 
-Installing a Specific RSAT Capability:
+Install a Specific RSAT Capability:
 <br />
 Add-WindowsCapability -Online -Name RSAT.ActiveDirectory.CertificateServices.Tools
 <br />
+*Just change the tool you need by entering the name of thr tool after -Name
 <br />
 <br />
 <br />
